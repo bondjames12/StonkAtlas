@@ -21,5 +21,8 @@ WORKDIR /app
 #copy our built files to app/out
 COPY --from=build-env /app/out .
 
+# Copies your code file from your action repository to the filesystem path `/` of the container
+COPY entrypoint.sh /entrypoint.sh
+
 #Specify how to start the app, takes an array that transforms into a command-line invocation with arguments
 ENTRYPOINT ["/entrypoint.sh"]
