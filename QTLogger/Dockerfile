@@ -20,5 +20,6 @@ FROM mcr.microsoft.com/dotnet/core/runtime:3.1
 WORKDIR /app
 #copy our built files to app/out
 COPY --from=build-env /app/out .
+
 #Specify how to start the app, takes an array that transforms into a command-line invocation with arguments
-ENTRYPOINT ["StonkAtlas.QTLogger", ""]
+ENTRYPOINT ["/entrypoint.sh"]
