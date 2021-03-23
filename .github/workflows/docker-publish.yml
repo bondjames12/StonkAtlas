@@ -48,7 +48,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build --file ./QTLogger/Dockerfile --tag $IMAGE_NAME ./QTLogger/
+        run: 
+          cd QTLogger
+          docker build --file Dockerfile --tag $IMAGE_NAME .
 
       - name: Log into registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
