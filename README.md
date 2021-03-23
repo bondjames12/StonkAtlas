@@ -1,0 +1,2 @@
+# StonkAtlas
+Atlas of Stonks
