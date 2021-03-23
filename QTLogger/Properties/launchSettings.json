@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "StonkAtlas.QTLogger": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\Colin\\Documents\\Projects\\StonkAtlas\\Secrets\\cloud1-colin-qtlogger-service-account-8ff954b5dc39.json"
+      }
+    }
+  }
+}
